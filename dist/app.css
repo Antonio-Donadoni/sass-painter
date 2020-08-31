@@ -1,12 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: azure;
 }
 
 header {
-  background-color: gold;
+  background-color: #101010;
+  padding: 0 10%;
 }
 
 header h2 {
   color: red;
+}
+
+header .upper-navbar,
+header .lower-navbar {
+  min-height: 45px;
+  display: flex;
+}
+
+header .upper-navbar ul,
+header .lower-navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+header .upper-navbar li,
+header .lower-navbar li {
+  list-style: none;
+}
+
+header .upper-navbar {
+  justify-content: flex-end;
+}
+
+header .upper-navbar li {
+  padding: 0 10px;
+}
+
+header .upper-navbar a {
+  color: #989898;
+}
+
+header .upper-navbar a:hover {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header .lower-navbar {
+  color: #fff;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+header .lower-navbar .logo {
+  margin-right: 20px;
+}
+
+header .lower-navbar img {
+  height: 25px;
+  width: 90px;
+}
+
+header .lower-navbar ul {
+  width: calc(100% - 110px);
+  height: 100%;
+}
+
+header .lower-navbar li {
+  text-align: center;
+  height: 45px;
+  padding: 0 20px;
+  line-height: 45px;
+}
+
+header .lower-navbar li:hover {
+  background-color: #fff;
+  color: #111;
 }
 
